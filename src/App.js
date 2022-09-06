@@ -10,6 +10,7 @@ import AppContext from "./pages/AppContext";
 import ListProduct from "./pages/product/list";
 import AddProduct from "./pages/product/create";
 import HooksExercise from "./components/hooks";
+import FormExercise from "./components/form";
 
 const globalState = [
     {
@@ -32,7 +33,7 @@ function App() {
         //         </Routes>
         //     </div>
         // </AppContext.Provider>
-        <HooksExercise/>
+        <FormExercise/>
     );
 }
 
