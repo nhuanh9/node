@@ -9,6 +9,7 @@ import TestParam from "./pages/TestParam";
 import AppContext from "./pages/AppContext";
 import ListProduct from "./pages/product/list";
 import AddProduct from "./pages/product/create";
+import HooksExercise from "./components/hooks";
 
 const globalState = [
     {
@@ -23,14 +24,15 @@ const globalState = [
 
 function App() {
     return (
-        <AppContext.Provider value={globalState}>
-            <div>
-                <Routes>
-                    <Route path={'/products'} element={<ListProduct></ListProduct>}></Route>
-                    <Route path={'/products/create'} element={<AddProduct></AddProduct>}></Route>
-                </Routes>
-            </div>
-        </AppContext.Provider>
+        // <AppContext.Provider value={globalState}>
+        //     <div>
+        //         <Routes>
+        //             <Route path={'/products'} element={<ListProduct></ListProduct>}></Route>
+        //             <Route path={'/products/create'} element={<AddProduct></AddProduct>}></Route>
+        //         </Routes>
+        //     </div>
+        // </AppContext.Provider>
+        <HooksExercise/>
     );
 }
 
